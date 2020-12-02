@@ -53,21 +53,34 @@ navLinks.forEach(link => link.textContent = "Services");
 
 const ctaText = document.querySelector('.cta-text');
 console.log("ctaText", ctaText);
-ctaText.children;
+ctaH1 = ctaText.nextElementSibling;
+console.log('ctaH1', ctaH1);
+
+
+
+
 
 const ctaImg = document.getElementById('cta-img');
 console.log("ctaImg", ctaImg);
 ctaImg.src = "img/header-img.png";
 
 
-const mainContent = document.querySelector('main-content');
+
+
+const mainContent = document.querySelector('.main-content');
 console.log('main-content', mainContent );
 
-const contact = document.querySelector('contact');
+
+
+
+const contact = document.querySelector('.contact');
 console.log('contact', contact);
+
+
 
 const footer = document.querySelector('footer');
 console.log('footer', footer);
+footer.textContent = "Copyright Great Idea! 2018";
 
 //
 
