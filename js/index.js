@@ -40,3 +40,34 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Create Selectors to point to data - big sections
+const navLinks = document.querySelectorAll('nav a');
+// console.log('navLinks', navLinks);
+navLinks.forEach(link => link.textContent = "Services");
+
+
+
+// const nav = document.querySelector('nav');
+// nav.textContent.navItem1 = "Services";
+
+const ctaText = document.querySelector('.cta-text');
+console.log("ctaText", ctaText);
+ctaText.children;
+
+const ctaImg = document.getElementById('cta-img');
+console.log("ctaImg", ctaImg);
+ctaImg.src = "img/header-img.png";
+
+
+const mainContent = document.querySelector('main-content');
+console.log('main-content', mainContent );
+
+const contact = document.querySelector('contact');
+console.log('contact', contact);
+
+const footer = document.querySelector('footer');
+console.log('footer', footer);
+
+//
+
