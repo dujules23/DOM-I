@@ -110,5 +110,26 @@ console.log('footer', footer);
 footer.textContent = siteContent['footer']['copyright'];
 
 
+// New content
+
+
+//Changing Nav to Green
+const navColor = document.querySelector('nav');
+console.log(navColor);
+navColor.style.color = 'green';
+
+
+//Adding a link in the nav
+
+const navLink = document.createElement('a');
+navLink.textContent = "Chill Mode";
+navLink.href = '#';
+document.querySelector('nav').appendChild(navLink);
+
+
+
+
+
+
 
 
