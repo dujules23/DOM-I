@@ -74,6 +74,7 @@ const mainH42 = mainH4[2].textContent = siteContent['main-content']['services-h4
 const mainH43 = mainH4[3].textContent = siteContent['main-content']['product-h4'];
 const mainH44 = mainH4[4].textContent = siteContent['main-content']['vision-h4'];
 
+
 const mainP = document.querySelectorAll('p');
 
 const mainP0 = mainP[0].textContent = siteContent['main-content']['features-content']
@@ -86,28 +87,26 @@ const mainImg = document.getElementById('middle-img');
 mainImg.src = siteContent['main-content']['middle-img-src'];
 
 
-// tContent.forEach(h4 => (siteContent) {if (h4 == )})
-
-// const featH4 = tContent.querySelector('h4');
-// const featP = tContent.querySelector('p');
-
-// featH4.textContent = "Features";
-// featP.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 
 
+// Contact section
+const contactH4 = document.querySelector('.contact h4');
+console.log(contactH4);
 
+contactH4.textContent = siteContent['contact']['contact-h4'];
 
+const contactP = document.querySelectorAll('.contact p');
+console.log(contactP);
 
-
-const contact = document.querySelector('.contact');
-console.log('contact', contact);
-
-
+const contactP0 = contactP[0].textContent = siteContent['contact']['address'];
+const contactP1 = contactP[1].textContent = siteContent['contact']['phone'];
+const contactP2 = contactP[2].textContent = siteContent['contact']['email'];
 
 const footer = document.querySelector('footer');
 console.log('footer', footer);
-footer.textContent = "Copyright Great Idea! 2018";
+const mainPFooter = mainP
+// footer.textContent = "Copyright Great Idea! 2018";
 
 //
 
