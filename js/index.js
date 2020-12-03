@@ -103,10 +103,12 @@ const contactP0 = contactP[0].textContent = siteContent['contact']['address'];
 const contactP1 = contactP[1].textContent = siteContent['contact']['phone'];
 const contactP2 = contactP[2].textContent = siteContent['contact']['email'];
 
-const footer = document.querySelector('footer');
-console.log('footer', footer);
-const mainPFooter = mainP
-// footer.textContent = "Copyright Great Idea! 2018";
 
-//
+//Footer section
+const footer = document.querySelector('footer p');
+console.log('footer', footer);
+footer.textContent = siteContent['footer']['copyright'];
+
+
+
 
