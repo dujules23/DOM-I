@@ -65,10 +65,7 @@ ctaImg.src = siteContent['cta']['img-src'];
 
 
 // Main content section
-const tContent = document.querySelector('.text-content');
-// console.log(tContent);
-
-const mainH4 = document.querySelectorAll('.text-content');
+const mainH4 = document.querySelectorAll('h4');
 console.log(mainH4);
 
 const mainH40 = mainH4[0].textContent = siteContent['main-content']['features-h4'];
@@ -77,9 +74,17 @@ const mainH42 = mainH4[2].textContent = siteContent['main-content']['services-h4
 const mainH43 = mainH4[3].textContent = siteContent['main-content']['product-h4'];
 const mainH44 = mainH4[4].textContent = siteContent['main-content']['vision-h4'];
 
-const mainP = document.querySelectorAll('.text-content');
+const mainP = document.querySelectorAll('p');
 
 const mainP0 = mainP[0].textContent = siteContent['main-content']['features-content']
+const mainP1 = mainP[1].textContent = siteContent['main-content']['about-content']
+const mainP2 = mainP[2].textContent = siteContent['main-content']['services-content']
+const mainP3 = mainP[3].textContent = siteContent['main-content']['product-content']
+const mainP4 = mainP[4].textContent = siteContent['main-content']['vision-content']
+
+const mainImg = document.getElementById('middle-img');
+mainImg.src = siteContent['main-content']['middle-img-src'];
+
 
 // tContent.forEach(h4 => (siteContent) {if (h4 == )})
 
