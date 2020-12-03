@@ -42,33 +42,55 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Create Selectors to point to data - big sections
-const navLinks = document.querySelectorAll('nav a');
-// console.log('navLinks', navLinks);
-navLinks.forEach(link => link.textContent = "Services");
+const navMenu = document.querySelectorAll('nav a');
+
+const navMenu0 = navMenu[0].textContent = siteContent['nav']['nav-item-1']
+const navMenu1 = navMenu[1].textContent = siteContent['nav']['nav-item-2']
+const navMenu2 = navMenu[2].textContent = siteContent['nav']['nav-item-3']
+const navMenu3 = navMenu[3].textContent = siteContent['nav']['nav-item-4']
+const navMenu4 = navMenu[4].textContent = siteContent['nav']['nav-item-5']
+const navMenu5 = navMenu[5].textContent = siteContent['nav']['nav-item-6']
 
 
+// Cta section
+const ctaH1 = document.querySelector('h1');
+ctaH1.textContent = siteContent['cta']['h1'];
 
-// const nav = document.querySelector('nav');
-// nav.textContent.navItem1 = "Services";
-
-const ctaText = document.querySelector('.cta-text');
-console.log("ctaText", ctaText);
-ctaH1 = ctaText.nextElementSibling;
-console.log('ctaH1', ctaH1);
-
-
-
-
+const ctaButton = document.querySelector('button')
+ctaButton.textContent = siteContent['cta']['button'];
 
 const ctaImg = document.getElementById('cta-img');
-console.log("ctaImg", ctaImg);
-ctaImg.src = "img/header-img.png";
+ctaImg.src = siteContent['cta']['img-src'];
 
 
 
+// Main content section
+const tContent = document.querySelector('.text-content');
+// console.log(tContent);
 
-const mainContent = document.querySelector('.main-content');
-console.log('main-content', mainContent );
+const mainH4 = document.querySelectorAll('.text-content');
+console.log(mainH4);
+
+const mainH40 = mainH4[0].textContent = siteContent['main-content']['features-h4'];
+const mainH41 = mainH4[1].textContent = siteContent['main-content']['about-h4'];
+const mainH42 = mainH4[2].textContent = siteContent['main-content']['services-h4'];
+const mainH43 = mainH4[3].textContent = siteContent['main-content']['product-h4'];
+const mainH44 = mainH4[4].textContent = siteContent['main-content']['vision-h4'];
+
+const mainP = document.querySelectorAll('.text-content');
+
+const mainP0 = mainP[0].textContent = siteContent['main-content']['features-content']
+
+// tContent.forEach(h4 => (siteContent) {if (h4 == )})
+
+// const featH4 = tContent.querySelector('h4');
+// const featP = tContent.querySelector('p');
+
+// featH4.textContent = "Features";
+// featP.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+
+
 
 
 
